@@ -1,1 +1,59 @@
+//Challenge 1:
+let name; //name variable:
+name = "Jason"; //assigning value to variable:
+let age; //age variable:
+age = 49; //age value assigned to variable:
+let isStudent; //isStudent variable:
+isStudent = true; //isStudent value assigned to variable:
+console.log("Name:", name, "| Type:", typeof name);
+console.log("Age:", age, "| Type:", typeof age);
+console.log("Is Student:", isStudent, "| Type:", typeof isStudent);
+
+//challenge 2:
+let x; // first number variable:
+x=15; //assigned number to variable:
+let y; // second number variable:
+y=5; //assigned number to variable:
+let z; //answer to the question:
+//arithmetic operations:
+z = x+y; //addition:
+z = X-y; //subtraction:
+z = x*y; //multiplication:
+z = x/y; //division:
+console.log("Addition:", x + y);
+console.log("Subtraction:", x - y);
+console.log("Multiplication:", x * y);
+console.log("Division:", x / y);
+
+//challenge 3:
+let sentence = " Coding is fun!"; //sentence variable:
+console.log("Length:", sentence.length); //length of the sentence:
+console.log("First character:",, sentence.charAt(0)); //first character of the sentence:
+console.log("Last character:", sentence.charAt(sentence.length - 1)); //last character of the sentence:
+
+//challenge 4:
+let negativeNumber = -144;
+console.log("Square root (absolute):", Math.sqrt(Math.abs(negativeNumber)));
+console.log("Squared:", Math.pow(negativeNumber, 2)); 
+console.log("Absolute value:", Math.abs(negativeNumber)); 
+
+//challenge 5:
+let a = 10; //first number:
+let b = 20; //second number:
+console.log("Is a > b ?", a > b);
+console.log("Is a < b ?", a < b);
+console.log ("Is a == b ?", a == b);
+
+//challenge 6:
+let a = true;
+let b = false;
+console.log("a and b;", a && b);
+console.log("a or b;", a || b);
+console.log("not a;", !a);
+
+//challenge 7:
+let firstName = "Captain";
+let lastName = "Sparrow";
+let greeting = `Welcome aboard, ${firstName} ${lastName}!We have our heading!`;
+console.log(greeting);
 
