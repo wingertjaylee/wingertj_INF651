@@ -1,0 +1,24 @@
+// User is prompted to enter score of 0-100
+let score = parseInt(prompt("Enter a score between 0 and 100:"));
+//verify the score that is entered is between 0 and 100
+if (!isNaN(score) && score >= 0 && score <= 100) {
+    let grade;
+    //grade will be determined based on the score
+    if (score >= 90) {
+        grade = "A";
+    } else if (score >= 80) {
+        grade = "B";
+    } else if  (score >= 70) {
+        grade = "C";
+    } else if (score >= 60) {
+        grade = "D";
+    } else {
+        grade = "F";
+   }
+   //output notice of the grade
+   alert(`According to your score of ${score}, your grade is ${grade}.`);
+   console.log(`Score: ${score}, Grade: ${grade}`);
+} else {
+    //notice if score is invalid
+    alert("Score is invalid.  Please enter a number between 1 and 100.");
+}     
