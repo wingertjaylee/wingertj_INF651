@@ -1,0 +1,36 @@
+/*prompt for the use to ente a number between 1 and 7
+This will correspond to the days of the week*/
+let dayNumber = parseInt(prompt("Please Enter a number between 1 and 7 to find the day of the week:"));
+// verify that the number that is inputed is between 1 and 7
+if (!isNaN(dayNumber) && dayNumber >= 1 && dayNumber <= 7) {
+    let dayName;
+
+    switch (dayNumber) {
+        case 1:
+            dayName = "Sunday";
+            break;      
+        case 2:
+            dayName = "Monday";
+            break;
+        case 3:
+            dayName = "Tuesday";
+            break;
+        case 4:
+            dayName = "Wednesday";
+            break;
+        case 5:
+            dayName = "Thursday";
+            break;
+        case 6:
+            dayName = "Friday";
+            break;
+        case 7:
+            dayName = "Saturday";
+            break;
+    }
+    //output for the day of the week and invalid input warning.
+    alert(`The day corresponding to ${dayNumber} is: ${dayName}`);
+    console.log(`User entered: ${dayNumber}, Day: ${dayName}`);
+} else {
+    alert("Input is invalid. Please enter a number between 1 and 7 only.");
+}
