@@ -1,0 +1,12 @@
+// this will prompt a user to enter a password and validate it.
+let password = prompt ("Please enter your password:");
+// intial prompt to allow user to enter a password
+let checkPassword;
+do {
+    checkPassword = prompt("Please re-enter your password for validation:");
+    //this will check to see if the password is a match.
+    if (checkPassword !== password) {
+        alert ("Incorrect Passwords do not match. Please try again.");
+    }
+} while (checkPassword !== password);
+alert("Password is Validated Access is Granted.");
