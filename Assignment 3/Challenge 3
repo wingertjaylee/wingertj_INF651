@@ -1,0 +1,11 @@
+// prompt the user to enter a number.
+let userNumber = parseInt(prompt("Please Enter a Number:"));
+//Verify that the number is a valid number.
+if (!isNaN(userNumber)){
+    for (let i = 1; i <= 10; i++) {
+        console.log(`${userNumber} x ${i} = ${userNumber * i}`);
+        alert(`${userNumber} x ${i} = ${userNumber * i}`);
+    } 
+} else {
+    alert("That is not a valid number. Please enter a valid number.");
+}

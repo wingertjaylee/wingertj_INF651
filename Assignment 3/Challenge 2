@@ -9,4 +9,4 @@ do {
         alert ("Incorrect Passwords do not match. Please try again.");
     }
 } while (checkPassword !== password);
-alert("Password is Validated Access is Granted.");
+alert("Password is Validated Access is Granted."); 
