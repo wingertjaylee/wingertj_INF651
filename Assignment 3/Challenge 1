@@ -1,0 +1,14 @@
+// This will generate a random number between 1 and 10
+const randomNumber = Math.floor(Math.random() * 10) +1;
+//start the user's guess at null
+let userGuess = null;
+//user will get prompts to continue guessing until answer is correct
+while (userGuess !== randomNumber){
+    userGuess = parseInt(prompt("Guess a number between 1 and 10:"));
+    //this will check to see if the guess is correct
+    if (userGuess == randomNumber){
+        alert("Great Job! That was the correct number!");
+    } else {
+        alert("Sorry that wasn't it. Try again! You Can Do It!");
+            }
+    }
